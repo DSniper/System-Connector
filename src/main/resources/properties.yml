@@ -1,0 +1,17 @@
+server:
+  port: 8085
+
+app:
+  name: spring-converter
+  version: 1.0.0
+
+logging:
+  file:
+    name: logs/spring-converter.log  # main log file
+  level:
+    root: INFO                       # default logging level
+    com.example.converter: DEBUG      # detailed logs for your code
+    org.springframework.web: INFO     # keep Spring web logs readable
+    org.hibernate: WARN               # reduce Hibernate noise
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%highlight(%-5level)] %cyan(%logger{36}) - %msg%n"
