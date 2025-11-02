@@ -1,129 +1,193 @@
-````markdown
-# 🌿 Spring Converter API
+---
 
-**A modular Spring Boot 3.2 application for XML ⇄ JSON conversion and Base64 file encoding/decoding.**
+```markdown
+# ⚙️ System Connector API – Unified Spring Boot Microservice (v1.0.0)
 
-[![Java](https://img.shields.io/badge/Java-17%2B-blue.svg)](https://openjdk.org/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-brightgreen.svg)](https://spring.io/projects/spring-boot)
-[![Maven](https://img.shields.io/badge/Maven-Build-orange.svg)](https://maven.apache.org/)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
+A powerful **Spring Boot 3.2** based microservice designed to perform **multi-format data conversions** and system utilities — all from a single service running on **port 8085**.
 
+> Modules included: XML ⇄ JSON, TOON ⇄ JSON, Base64 Encode/Decode, Config, and Health.
 ---
 
 ## 📚 Table of Contents
 1. [Overview](#overview)
-2. [Features](#features)
-3. [Project Structure](#project-structure)
+2. [Modules](#modules)
+3. [Architecture](#architecture)
 4. [Technology Stack](#technology-stack)
-5. [Setup & Installation](#setup--installation)
-6. [Configuration](#configuration)
-7. [API Endpoints](#api-endpoints)
-   - [Health Check](#health-check)
-   - [XML ⇄ JSON Conversion](#xml--json-conversion)
-   - [Base64 Encode/Decode](#base64-encodedecode)
-8. [Example Folder Paths](#example-folder-paths)
-9. [Error Handling](#error-handling)
-10. [Troubleshooting & FAQ](#troubleshooting--faq)
-11. [License](#license)
+5. [Project Structure](#project-structure)
+6. [Setup & Installation](#setup--installation)
+7. [Configuration](#configuration)
+8. [Swagger API Docs](#swagger-api-docs)
+9. [API Endpoints](#api-endpoints)
+10. [Error Handling](#error-handling)
+11. [Docker Support](#docker-support)
+12. [Troubleshooting & FAQ](#troubleshooting--faq)
+13. [Future Enhancements](#future-enhancements)
+14. [License](#license)
 
 ---
 
 ## 🧭 Overview
 
-The **Spring Converter API** is a cleanly modularized Spring Boot app designed for developers working with **data format transformations** such as:
+**System Connector API** is a single backend service that centralizes system operations for enterprise integration workflows.
 
-- XML ⇄ JSON conversion  
-- Base64 encoding/decoding of text and files  
-- Health check endpoint for DevOps monitoring  
-
-It’s structured for scalability — easily extendable with new modules (e.g., CSV, YAML, PDF encoders).
-
----
-
-## ✨ Features
-
-✅ Convert **XML → JSON** and **JSON → XML**  
-✅ Encode/Decode **text or binary files** using Base64  
-✅ Configurable port via `application.yml`  
-✅ Clear modular packaging (`xml`, `base64`, `config`)  
-✅ Industry-grade exception handling and JSON responses  
-✅ Ready for CI/CD integration and containerization  
+### ✨ Supported Features
+- XML ⇄ JSON Conversion  
+- TOON ⇄ JSON Conversion *(Token-Oriented Object Notation)*  
+- Base64 Encoding & Decoding  
+- Health & Configuration Endpoints  
+- Built-in Swagger UI for API documentation  
 
 ---
 
-## 🧱 Project Structure
+## 🧱 Modules
 
-```bash
-spring-converter/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/converter/
-│   │   │   ├── SpringConverterApplication.java
-│   │   │   ├── config/
-│   │   │   │   └── AppConfig.java
-│   │   │   ├── xml/
-│   │   │   │   ├── controller/XmlController.java
-│   │   │   │   └── service/XmlService.java
-│   │   │   ├── base64/
-│   │   │   │   ├── controller/Base64Controller.java
-│   │   │   │   └── service/Base64Service.java
-│   │   └── resources/
-│   │       ├── application.yml
-│   │       └── logback-spring.xml
-│   └── test/
-├── pom.xml
-└── README.md
-````
+| Module | Purpose |
+|--------|----------|
+| 🧩 **XML** | Convert XML ⇄ JSON |
+| 🌀 **TOON** | Convert TOON ⇄ JSON |
+| 🔐 **Base64** | Encode or decode strings |
+| ❤️ **Health** | Service status & uptime |
+| ⚙️ **Config** | View runtime configuration |
 
 ---
+
+## 🏗️ Architecture
+
+```
+
++--------------------------------------------------------+
+
+| SYSTEM CONNECTOR API (Spring Boot)                         |      |        |        |        |         |
+| ---------------------------------------------------------- | ---- | ------ | ------ | ------ | ------- |
+| XML                                                        | TOON | BASE64 | CONFIG | HEALTH | SWAGGER |
+| +--------------------------------------------------------+ |      |        |        |        |         |
+
+```
+                     ↓
+             REST APIs @ port 8085
 
 ## ⚙️ Technology Stack
 
-| Component   | Version  | Purpose               |
-| ----------- | -------- | --------------------- |
-| Java        | 17+      | Core language         |
-| Spring Boot | 3.2.x    | Application framework |
-| Maven       | 3.8+     | Build automation      |
-| Jackson     | Latest   | JSON/XML parsing      |
-| Lombok      | Optional | Code simplification   |
-| JUnit       | 5.x      | Testing               |
+| Component | Version | Description |
+|------------|----------|-------------|
+| Java | 17+ | Core language |
+| Spring Boot | 3.2.x | Framework |
+| Jackson | Latest | JSON/XML parsing |
+| Lombok | Latest | Boilerplate removal |
+| Swagger (Springdoc) | 2.6+ | API docs |
+| Maven | 3.8+ | Build tool |
+| Docker | 24+ | Containerization |
+
+---
+
+## 📁 Project Structure
+
+```
+
+system-connector/
+├── src/main/java/com/example/connector/
+│   ├── SystemConnectorApplication.java
+│   ├── base64/
+│   │   ├── controller/Base64Controller.java
+│   │   └── service/Base64Service.java
+│   ├── toon/
+│   │   ├── controller/ToonController.java
+│   │   └── service/ToonService.java
+│   ├── xml/
+│   │   ├── controller/XmlController.java
+│   │   └── service/XmlService.java
+│   ├── config/
+│   │   └── ConfigController.java
+│   ├── health/
+│   │   └── HealthController.java
+│   ├── config/SwaggerConfig.java
+│   └── exception/GlobalExceptionHandler.java
+├── src/main/resources/
+│   ├── application.yml
+│   └── logback-spring.xml
+├── pom.xml
+└── README.md
+
+````
 
 ---
 
 ## 🚀 Setup & Installation
 
-### 1️⃣ Clone the project
+### 1️⃣ Clone Repository
+```bash
+  git clone https://github.com/your-username/system-connector.git
+  cd system-connector
+````
+
+### 2️⃣ Build
 
 ```bash
-git clone https://github.com/your-username/spring-converter.git
-cd spring-converter
+  mvn clean package -DskipTests
 ```
 
-### 2️⃣ Build and Run
+### 3️⃣ Run
 
 ```bash
-mvn clean package
-java -jar target/spring-converter-0.0.1-SNAPSHOT.jar
+  mvn spring-boot:run
 ```
 
-The app will start at:
-👉 **[http://localhost:8085](http://localhost:8085)**
+or
+
+```bash
+ java -jar target/system-connector-0.0.1-SNAPSHOT.jar
+```
+
+✅ Access: [http://localhost:8085/api/v1/health](http://localhost:8085/api/v1/health)
 
 ---
 
 ## ⚙️ Configuration
 
-The default port is defined in `src/main/resources/application.yml`:
+**`application.yml`**
 
 ```yaml
 server:
   port: 8085
+
 spring:
   application:
-    name: spring-converter
+    name: system-connector
+
+logging:
+  level:
+    root: INFO
 ```
 
-> 💡 Change `8085` to any port — e.g., `9090` — and the entire project adapts automatically.
+---
+
+## 📘 Swagger API Docs
+
+* **Swagger UI:** [http://localhost:8085/swagger-ui.html](http://localhost:8085/swagger-ui.html)
+* **OpenAPI JSON:** [http://localhost:8085/v3/api-docs](http://localhost:8085/v3/api-docs)
+
+**SwaggerConfig.java**
+
+```java
+package com.example.connector.config;
+
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Info;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SwaggerConfig {
+    @Bean
+    public OpenAPI systemConnectorOpenAPI() {
+        return new OpenAPI()
+                .info(new Info()
+                        .title("System Connector API")
+                        .description("Unified data conversion service (XML, TOON, Base64)")
+                        .version("1.0.0"));
+    }
+}
+```
 
 ---
 
@@ -131,209 +195,208 @@ spring:
 
 ### 🩺 Health Check
 
-**Endpoint:**
 `GET /api/v1/health`
 
-**Response:**
-
 ```json
-{
-  "status": "UP",
-  "timestamp": "2025-11-03T10:00:00Z"
-}
+{ "status": "UP", "timestamp": "2025-11-03T10:00:00Z" }
 ```
 
 ---
 
-### 🔁 XML ⇄ JSON Conversion
+### 🧩 XML ⇄ JSON
 
-#### 1️⃣ XML → JSON
+#### XML → JSON
 
-**Endpoint:**
-`POST /api/v1/xml/convert-to-json`
-
-**Headers:**
-
-```
-Content-Type: application/xml
-Accept: application/json
-```
-
-**Request Body (example):**
+`POST /api/v1/xml/to-json`
 
 ```xml
-<person>
-    <name>John</name>
-    <age>30</age>
-    <address>
-        <street>Main Street</street>
-        <city>New York</city>
-        <zip>12345</zip>
-    </address>
-</person>
+<user><name>Daisy</name><age>26</age></user>
 ```
 
-**Response:**
+Response:
 
 ```json
-{
-  "status": "success",
-  "message": "Converted XML to JSON",
-  "data": {
-    "person": {
-      "name": "John",
-      "age": "30",
-      "address": {
-        "street": "Main Street",
-        "city": "New York",
-        "zip": "12345"
-      }
-    }
-  }
-}
+{"user":{"name":"Daisy","age":"26"}}
+```
+
+#### JSON → XML
+
+`POST /api/v1/xml/to-xml`
+
+```json
+{"user":{"name":"Daisy","age":26}}
+```
+
+Response:
+
+```xml
+<user><name>Daisy</name><age>26</age></user>
 ```
 
 ---
 
-#### 2️⃣ JSON → XML
+### 🌀 TOON ⇄ JSON
 
-**Endpoint:**
-`POST /api/v1/xml/convert-to-xml`
+**TOON** (*Token-Oriented Object Notation*) – a compact syntax for lightweight data objects.
 
-**Headers:**
+#### JSON → TOON
 
-```
-Content-Type: application/json
-Accept: application/xml
-```
-
-**Request Body:**
+`POST /api/v1/toon/json-to-toon`
 
 ```json
-{
-  "person": {
-    "name": "John",
-    "age": 30
-  }
-}
+{"name":"Alice","age":30,"skills":["Java","Spring"]}
 ```
 
-**Response:**
+Response:
 
-```xml
-<person>
-  <name>John</name>
-  <age>30</age>
-</person>
+```json
+{"toon":"(name:Alice, age:30, skills:[Java,Spring])"}
+```
+
+#### TOON → JSON
+
+`POST /api/v1/toon/toon-to-json`
+
+```json
+{"toon":"(name:Alice, age:30, skills:[Java,Spring])"}
+```
+
+Response:
+
+```json
+{"json":{"name":"Alice","age":30,"skills":["Java","Spring"]}}
 ```
 
 ---
 
 ### 🔐 Base64 Encode/Decode
 
-#### 1️⃣ Encode File
+#### Encode
 
-**Endpoint:**
 `POST /api/v1/base64/encode`
 
-**Form Data:**
-
-| Key  | Type | Description    |
-| ---- | ---- | -------------- |
-| file | File | File to encode |
-
-**Response:**
-
 ```json
-{
-  "status": "success",
-  "message": "File encoded successfully",
-  "data": "U29tZSBlbmNvZGVkIHRleHQ="
-}
+{"text":"System Connector Rocks!"}
 ```
 
----
+Response:
 
-#### 2️⃣ Decode File
+```json
+{"encoded":"U3lzdGVtIENvbm5lY3RvciBSb2Nrcw=="}
+```
 
-**Endpoint:**
+#### Decode
+
 `POST /api/v1/base64/decode`
 
-**Request Body:**
-
 ```json
-{
-  "base64": "U29tZSBlbmNvZGVkIHRleHQ=",
-  "outputPath": "D:/AI_Mode/decoded_output.txt"
-}
+{"base64":"U3lzdGVtIENvbm5lY3RvciBSb2Nrcw=="}
 ```
 
-**Response:**
+Response:
 
 ```json
-{
-  "status": "success",
-  "message": "File decoded and saved successfully",
-  "outputPath": "D:/AI_Mode/decoded_output.txt"
-}
+{"decoded":"System Connector Rocks!"}
 ```
 
 ---
 
-## 📁 Example Folder Paths
+### ⚙️ Config
 
-When working with files:
+`GET /api/v1/config`
 
-```
-D:/
-└── AI_Mode/
-    ├── input/
-    │   └── sample.xml
-    ├── output/
-    │   ├── encoded.txt
-    │   └── decoded_output.txt
+```json
+{"appName":"System Connector API","port":8085,"status":"active"}
 ```
 
 ---
 
 ## 🚨 Error Handling
 
-| Error                     | Cause                   | Example Response                                  |
-| ------------------------- | ----------------------- | ------------------------------------------------- |
-| 400 Bad Request           | Invalid XML/JSON format | `{"status":"error","message":"Malformed JSON"}`   |
-| 404 Not Found             | Wrong URL               | `{"error":"Not Found"}`                           |
-| 500 Internal Server Error | Server failure          | `{"status":"error","message":"Unexpected error"}` |
+| Code | Meaning        | Example                          |
+| ---- | -------------- | -------------------------------- |
+| 400  | Invalid Input  | `{"error":"Malformed JSON"}`     |
+| 404  | Not Found      | `{"error":"Endpoint Not Found"}` |
+| 500  | Internal Error | `{"error":"Unexpected Error"}`   |
+
+---
+
+## 🐳 Docker Support
+
+### Dockerfile
+
+```dockerfile
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY target/system-connector-0.0.1-SNAPSHOT.jar app.jar
+EXPOSE 8085
+ENTRYPOINT ["java","-jar","/app/app.jar"]
+```
+
+### docker-compose.yml
+
+```yaml
+version: '3.8'
+services:
+  system-connector:
+    build: .
+    container_name: system-connector
+    ports:
+      - "8085:8085"
+    restart: always
+```
+
+Run:
+
+```bash
+docker-compose up --build
+```
+
+Access Swagger:
+👉 [http://localhost:8085/swagger-ui.html](http://localhost:8085/swagger-ui.html)
 
 ---
 
 ## 🧩 Troubleshooting & FAQ
 
-**Q:** I get `404 Not Found` for `/convert/xml-to-json`
-**A:** Ensure your endpoint is `/api/v1/xml/convert-to-json` (note the difference).
+**Q:** Port 8085 in use?
+→ Change `server.port` in `application.yml`.
 
-**Q:** My XML file is too large (500MB+)
-**A:** Use streaming parsers like `StAX` or configure Spring `multipart.max-file-size` in `application.yml`.
+**Q:** Swagger not showing?
+→ Add dependency:
 
-**Q:** I want to change output folder for Base64 decoded files
-**A:** Update the `outputPath` field in the request JSON.
+```xml
+<dependency>
+  <groupId>org.springdoc</groupId>
+  <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+  <version>2.6.0</version>
+</dependency>
+```
+
+**Q:** TOON conversion invalid?
+→ Check parentheses `( )` and brackets `[ ]` in request.
 
 ---
 
 ## 🧭 Future Enhancements
 
-* [ ] CSV ⇄ JSON Converter
-* [ ] PDF ⇄ Base64 Encoder
-* [ ] YAML ⇄ JSON Support
-* [ ] OpenAPI/Swagger UI Integration
+* ✅ Unified microservice structure *(Done)*
+* ✅ Swagger UI Integration *(Done)*
+* [ ] YAML ⇄ JSON Converter
+* [ ] File Upload Support
+* [ ] Advanced TOON Syntax Validation
+* [ ] JWT Authentication
 
 ---
 
 ## ⚖️ License
 
-This project is licensed under the [MIT License](LICENSE).
+Licensed under the **MIT License**.
 
 ---
 
-* 🛠 **Author:** *Daisy Manmohan Singh*
-* 📧 **Contact:** [singhdmgangian@gmail.com](mailto:singhdmgangian@gmail.com)
-* 🌍 **GitHub:** [@DSniper](https://github.com/DSniper)
+* 🛠 **Author:** Daisy Manmohan Singh
+* 📧 [singhdmgangian@gmail.com](mailto:singhdmgangian@gmail.com)
+* 🌍 GitHub: [@DSniper](https://github.com/DSniper)
+
+```

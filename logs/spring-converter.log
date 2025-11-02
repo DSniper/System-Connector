@@ -18,3 +18,131 @@
 2025-11-03 02:56:51 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ⬅️ [POST] /api/v1/xml/convert-to-json - Status: 200 | Time: 85 ms | Timestamp: 2025-11-02T21:26:51.656455900Z
 2025-11-03 02:57:48 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ➡️ [GET] /api/v1/health
 2025-11-03 02:57:48 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ⬅️ [GET] /api/v1/health - Status: 200 | Time: 6 ms | Timestamp: 2025-11-02T21:27:48.504465600Z
+2025-11-03 03:53:50 [main] INFO  c.e.c.SpringConverterApplication - Starting SpringConverterApplication using Java 17.0.15 with PID 12896 (D:\Softwares\System-Connector\target\classes started by HP in D:\Softwares\System-Connector)
+2025-11-03 03:53:50 [main] DEBUG c.e.c.SpringConverterApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-03 03:53:50 [main] INFO  c.e.c.SpringConverterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-03 03:53:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2025-11-03 03:53:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-11-03 03:53:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-03 03:53:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-03 03:53:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-03 03:53:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 649 ms
+2025-11-03 03:53:51 [main] DEBUG c.e.c.c.RequestResponseLoggingFilter - Filter 'requestResponseLoggingFilter' configured for use
+2025-11-03 03:53:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-11-03 03:53:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path ''
+2025-11-03 03:53:51 [main] INFO  c.e.c.SpringConverterApplication - Started SpringConverterApplication in 1.516 seconds (process running for 1.774)
+2025-11-03 03:55:08 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 03:55:08 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 03:55:08 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-11-03 03:55:08 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 03:55:08 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 69 ms | Timestamp: 2025-11-02T22:25:08.436098100Z
+2025-11-03 03:55:08 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /favicon.ico
+2025-11-03 03:55:08 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /favicon.ico - Status: 404 | Time: 14 ms | Timestamp: 2025-11-02T22:25:08.497537100Z
+2025-11-03 03:55:27 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 03:55:27 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 2 ms | Timestamp: 2025-11-02T22:25:27.837941600Z
+2025-11-03 03:55:42 [http-nio-8085-exec-8] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 03:55:42 [http-nio-8085-exec-8] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 2 ms | Timestamp: 2025-11-02T22:25:42.079013Z
+2025-11-03 03:55:43 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 03:55:43 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 3 ms | Timestamp: 2025-11-02T22:25:43.396033400Z
+2025-11-03 03:56:12 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 03:56:12 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 4 ms | Timestamp: 2025-11-02T22:26:12.123339600Z
+2025-11-03 03:57:21 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/toon/json-to-toon
+2025-11-03 03:57:21 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/toon/json-to-toon - Status: 404 | Time: 2 ms | Timestamp: 2025-11-02T22:27:21.896785700Z
+2025-11-03 03:58:05 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/toon/json-to-toon
+2025-11-03 03:58:05 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/toon/json-to-toon - Status: 404 | Time: 3 ms | Timestamp: 2025-11-02T22:28:05.172013500Z
+2025-11-03 03:58:32 [http-nio-8085-exec-8] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/json-to-toon
+2025-11-03 03:58:32 [http-nio-8085-exec-8] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/json-to-toon - Status: 404 | Time: 3 ms | Timestamp: 2025-11-02T22:28:32.093836300Z
+2025-11-03 03:58:34 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/json-to-toon
+2025-11-03 03:58:34 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/json-to-toon - Status: 404 | Time: 2 ms | Timestamp: 2025-11-02T22:28:34.705836300Z
+2025-11-03 04:00:31 [main] INFO  c.e.c.SpringConverterApplication - Starting SpringConverterApplication using Java 17.0.15 with PID 1612 (D:\Softwares\System-Connector\target\classes started by HP in D:\Softwares\System-Connector)
+2025-11-03 04:00:31 [main] DEBUG c.e.c.SpringConverterApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-03 04:00:31 [main] INFO  c.e.c.SpringConverterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-03 04:00:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2025-11-03 04:00:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-11-03 04:00:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-03 04:00:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-03 04:00:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-03 04:00:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 697 ms
+2025-11-03 04:00:32 [main] DEBUG c.e.c.c.RequestResponseLoggingFilter - Filter 'requestResponseLoggingFilter' configured for use
+2025-11-03 04:00:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-11-03 04:00:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path ''
+2025-11-03 04:00:33 [main] INFO  c.e.c.SpringConverterApplication - Started SpringConverterApplication in 1.654 seconds (process running for 1.916)
+2025-11-03 04:00:42 [http-nio-8085-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 04:00:42 [http-nio-8085-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 04:00:42 [http-nio-8085-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-11-03 04:00:42 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/json-to-toon
+2025-11-03 04:00:42 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/json-to-toon - Status: 200 | Time: 239 ms | Timestamp: 2025-11-02T22:30:42.501378300Z
+2025-11-03 04:01:51 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/toon-to-json
+2025-11-03 04:01:51 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/toon-to-json - Status: 200 | Time: 12 ms | Timestamp: 2025-11-02T22:31:51.865557900Z
+2025-11-03 04:02:03 [http-nio-8085-exec-6] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/toon-to-json
+2025-11-03 04:02:03 [http-nio-8085-exec-6] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/toon-to-json - Status: 200 | Time: 8 ms | Timestamp: 2025-11-02T22:32:03.537423100Z
+2025-11-03 04:03:26 [main] INFO  c.e.c.SpringConverterApplication - Starting SpringConverterApplication using Java 17.0.15 with PID 8492 (D:\Softwares\System-Connector\target\classes started by HP in D:\Softwares\System-Connector)
+2025-11-03 04:03:26 [main] DEBUG c.e.c.SpringConverterApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-03 04:03:26 [main] INFO  c.e.c.SpringConverterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-03 04:03:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2025-11-03 04:03:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-11-03 04:03:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-03 04:03:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-03 04:03:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-03 04:03:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 648 ms
+2025-11-03 04:03:27 [main] DEBUG c.e.c.c.RequestResponseLoggingFilter - Filter 'requestResponseLoggingFilter' configured for use
+2025-11-03 04:03:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-11-03 04:03:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path ''
+2025-11-03 04:03:27 [main] INFO  c.e.c.SpringConverterApplication - Started SpringConverterApplication in 1.559 seconds (process running for 1.809)
+2025-11-03 04:03:33 [http-nio-8085-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 04:03:33 [http-nio-8085-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 04:03:33 [http-nio-8085-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-03 04:03:33 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/toon-to-json
+2025-11-03 04:03:33 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/toon/toon-to-json - Status: 200 | Time: 237 ms | Timestamp: 2025-11-02T22:33:33.321118500Z
+2025-11-03 04:05:21 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:05:21 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 12 ms | Timestamp: 2025-11-02T22:35:21.683880300Z
+2025-11-03 04:53:34 [main] INFO  c.e.c.SpringConverterApplication - Starting SpringConverterApplication using Java 17.0.15 with PID 7948 (D:\Softwares\System-Connector\target\classes started by HP in D:\Softwares\System-Connector)
+2025-11-03 04:53:34 [main] DEBUG c.e.c.SpringConverterApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-03 04:53:34 [main] INFO  c.e.c.SpringConverterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-03 04:53:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2025-11-03 04:53:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-11-03 04:53:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-03 04:53:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-03 04:53:35 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-03 04:53:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 853 ms
+2025-11-03 04:53:35 [main] DEBUG c.e.c.c.RequestResponseLoggingFilter - Filter 'requestResponseLoggingFilter' configured for use
+2025-11-03 04:53:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-11-03 04:53:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path ''
+2025-11-03 04:53:36 [main] INFO  c.e.c.SpringConverterApplication - Started SpringConverterApplication in 2.104 seconds (process running for 2.414)
+2025-11-03 04:54:03 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 04:54:03 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 04:54:03 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-03 04:54:03 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:03 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 71 ms | Timestamp: 2025-11-02T23:24:03.479391900Z
+2025-11-03 04:54:05 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:05 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 2 ms | Timestamp: 2025-11-02T23:24:05.077215600Z
+2025-11-03 04:54:06 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:06 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 4 ms | Timestamp: 2025-11-02T23:24:06.469535300Z
+2025-11-03 04:54:15 [http-nio-8085-exec-6] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:15 [http-nio-8085-exec-6] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 10 ms | Timestamp: 2025-11-02T23:24:15.037959300Z
+2025-11-03 04:54:15 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:15 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 13 ms | Timestamp: 2025-11-02T23:24:15.794852200Z
+2025-11-03 04:54:16 [http-nio-8085-exec-7] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:16 [http-nio-8085-exec-7] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 5 ms | Timestamp: 2025-11-02T23:24:16.040295900Z
+2025-11-03 04:54:16 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:16 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 1 ms | Timestamp: 2025-11-02T23:24:16.238891200Z
+2025-11-03 04:54:16 [http-nio-8085-exec-8] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:16 [http-nio-8085-exec-8] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 3 ms | Timestamp: 2025-11-02T23:24:16.430664200Z
+2025-11-03 04:54:16 [http-nio-8085-exec-9] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:16 [http-nio-8085-exec-9] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 4 ms | Timestamp: 2025-11-02T23:24:16.629202300Z
+2025-11-03 04:54:16 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:16 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 2 ms | Timestamp: 2025-11-02T23:24:16.790987Z
+2025-11-03 04:54:16 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:16 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 0 ms | Timestamp: 2025-11-02T23:24:16.940941700Z
+2025-11-03 04:54:17 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:17 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 2 ms | Timestamp: 2025-11-02T23:24:17.132355300Z
+2025-11-03 04:54:17 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:17 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 0 ms | Timestamp: 2025-11-02T23:24:17.294928Z
+2025-11-03 04:54:17 [http-nio-8085-exec-6] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:17 [http-nio-8085-exec-6] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 0 ms | Timestamp: 2025-11-02T23:24:17.481108600Z
+2025-11-03 04:54:17 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:54:17 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 6 ms | Timestamp: 2025-11-02T23:24:17.813359500Z
+2025-11-03 04:54:24 [http-nio-8085-exec-7] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui.html
+2025-11-03 04:54:24 [http-nio-8085-exec-7] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui.html - Status: 404 | Time: 26 ms | Timestamp: 2025-11-02T23:24:24.844492Z
+2025-11-03 04:54:29 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs
+2025-11-03 04:54:29 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs - Status: 404 | Time: 31 ms | Timestamp: 2025-11-02T23:24:29.147627400Z
