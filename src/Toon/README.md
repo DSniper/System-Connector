@@ -75,7 +75,11 @@ Access the health endpoint:
 
 ## ⚡️ API Endpoints
 
-Base URL: `http://localhost:4000`
+* Base URL: `[http://localhost:4000](http://localhost:4000)`
+* Health URL: `[http://localhost:4000/health](http://localhost:4000/health)`
+* Swagger UI URL: `[http://localhost:4000](http://localhost:4000/api-docs)`
+* JSON-TOON URL: `[http://localhost:4000](http://localhost:4000/api-docs/#/default/post_convert_json_to_toon)`
+* TOON-JSON URL: `[http://localhost:4000/api-docs/#/default/post_convert_toon_to_json](http://localhost:4000/api-docs/#/default/post_convert_toon_to_json)`
 
 ---
 
@@ -331,4 +335,5 @@ This project is licensed under the **MIT License**.
 
 * **Author:** *Daisy Manmohan Singh*
 * 📧 [singhdmgangian@gmail.com](mailto:singhdmgangian@gmail.com)
+
 * 🌍 GitHub: [@DSniper](https://github.com/DSniper)
