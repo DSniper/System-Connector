@@ -1,12 +1,14 @@
----
 
-```markdown
+
+
+
+
 # ⚙️ System Connector API – Unified Spring Boot Microservice (v1.0.0)
 
 A powerful **Spring Boot 3.2** based microservice designed to perform **multi-format data conversions** and system utilities — all from a single service running on **port 8085**.
 
 > Modules included: XML ⇄ JSON, TOON ⇄ JSON, Base64 Encode/Decode, Config, and Health.
----
+
 
 ## 📚 Table of Contents
 1. [Overview](#overview)
@@ -31,11 +33,11 @@ A powerful **Spring Boot 3.2** based microservice designed to perform **multi-fo
 **System Connector API** is a single backend service that centralizes system operations for enterprise integration workflows.
 
 ### ✨ Supported Features
-- XML ⇄ JSON Conversion  
-- TOON ⇄ JSON Conversion *(Token-Oriented Object Notation)*  
-- Base64 Encoding & Decoding  
-- Health & Configuration Endpoints  
-- Built-in Swagger UI for API documentation  
+- XML ⇄ JSON Conversion
+- TOON ⇄ JSON Conversion *(Token-Oriented Object Notation)*
+- Base64 Encoding & Decoding
+- Health & Configuration Endpoints
+- Built-in Swagger UI for API documentation
 
 ---
 
@@ -52,7 +54,6 @@ A powerful **Spring Boot 3.2** based microservice designed to perform **multi-fo
 ---
 
 ## 🏗️ Architecture
-
 ```
 
 +--------------------------------------------------------+
@@ -63,27 +64,25 @@ A powerful **Spring Boot 3.2** based microservice designed to perform **multi-fo
 | +--------------------------------------------------------+ |      |        |        |        |         |
 
 ```
-                     ↓
-             REST APIs @ port 8085
+                 ↓
+         REST APIs @ port 8085
+---
 
 ## ⚙️ Technology Stack
 
 | Component | Version | Description |
 |------------|----------|-------------|
-| Java | 17+ | Core language |
+| Java | 17 + | Core language |
 | Spring Boot | 3.2.x | Framework |
 | Jackson | Latest | JSON/XML parsing |
 | Lombok | Latest | Boilerplate removal |
-| Swagger (Springdoc) | 2.6+ | API docs |
-| Maven | 3.8+ | Build tool |
-| Docker | 24+ | Containerization |
+| Swagger (Springdoc) | 2.6 + | API docs |
+| Maven | 3.8 + | Build tool |
+| Docker | 24 + | Containerization |
 
 ---
-
-## 📁 Project Structure
-
 ```
-
+## 📁 Project Structure
 system-connector/
 ├── src/main/java/com/example/connector/
 │   ├── SystemConnectorApplication.java
@@ -116,26 +115,26 @@ system-connector/
 
 ### 1️⃣ Clone Repository
 ```bash
-  git clone https://github.com/your-username/system-connector.git
-  cd system-connector
+git clone https://github.com/your-username/system-connector.git
+cd system-connector
 ````
 
 ### 2️⃣ Build
 
 ```bash
-  mvn clean package -DskipTests
+mvn clean package -DskipTests
 ```
 
 ### 3️⃣ Run
 
 ```bash
-  mvn spring-boot:run
+mvn spring-boot:run
 ```
 
 or
 
 ```bash
- java -jar target/system-connector-0.0.1-SNAPSHOT.jar
+java -jar target/system-connector-0.0.1-SNAPSHOT.jar
 ```
 
 ✅ Access: [http://localhost:8085/api/v1/health](http://localhost:8085/api/v1/health)
@@ -144,7 +143,7 @@ or
 
 ## ⚙️ Configuration
 
-**`application.yml`**
+**application.yml**
 
 ```yaml
 server:
@@ -181,10 +180,10 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI systemConnectorOpenAPI() {
         return new OpenAPI()
-                .info(new Info()
-                        .title("System Connector API")
-                        .description("Unified data conversion service (XML, TOON, Base64)")
-                        .version("1.0.0"));
+            .info(new Info()
+                .title("System Connector API")
+                .description("Unified data conversion service (XML, TOON, Base64)")
+                .version("1.0.0"));
     }
 }
 ```
@@ -237,7 +236,7 @@ Response:
 
 ### 🌀 TOON ⇄ JSON
 
-**TOON** (*Token-Oriented Object Notation*) – a compact syntax for lightweight data objects.
+**TOON** (*Token-Oriented Object Notation*) – compact syntax for lightweight data objects.
 
 #### JSON → TOON
 
@@ -323,7 +322,7 @@ Response:
 
 ## 🐳 Docker Support
 
-### Dockerfile
+**Dockerfile**
 
 ```dockerfile
 FROM openjdk:17-jdk-slim
@@ -333,7 +332,7 @@ EXPOSE 8085
 ENTRYPOINT ["java","-jar","/app/app.jar"]
 ```
 
-### docker-compose.yml
+**docker-compose.yml**
 
 ```yaml
 version: '3.8'
@@ -352,8 +351,7 @@ Run:
 docker-compose up --build
 ```
 
-Access Swagger:
-👉 [http://localhost:8085/swagger-ui.html](http://localhost:8085/swagger-ui.html)
+Access Swagger → [http://localhost:8085/swagger-ui.html](http://localhost:8085/swagger-ui.html)
 
 ---
 
@@ -395,8 +393,7 @@ Licensed under the **MIT License**.
 
 ---
 
-* 🛠 **Author:** Daisy Manmohan Singh
+**Author:** Daisy Manmohan Singh
 * 📧 [singhdmgangian@gmail.com](mailto:singhdmgangian@gmail.com)
 * 🌍 GitHub: [@DSniper](https://github.com/DSniper)
 
-```

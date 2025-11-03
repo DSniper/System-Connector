@@ -146,3 +146,56 @@
 2025-11-03 04:54:24 [http-nio-8085-exec-7] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui.html - Status: 404 | Time: 26 ms | Timestamp: 2025-11-02T23:24:24.844492Z
 2025-11-03 04:54:29 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs
 2025-11-03 04:54:29 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs - Status: 404 | Time: 31 ms | Timestamp: 2025-11-02T23:24:29.147627400Z
+2025-11-03 04:56:22 [main] INFO  c.e.c.SpringConverterApplication - Starting SpringConverterApplication using Java 17.0.15 with PID 20608 (D:\Softwares\System-Connector\target\classes started by HP in D:\Softwares\System-Connector)
+2025-11-03 04:56:22 [main] DEBUG c.e.c.SpringConverterApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-03 04:56:22 [main] INFO  c.e.c.SpringConverterApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-03 04:56:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8085 (http)
+2025-11-03 04:56:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-11-03 04:56:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-03 04:56:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-03 04:56:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-03 04:56:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 928 ms
+2025-11-03 04:56:23 [main] DEBUG c.e.c.c.RequestResponseLoggingFilter - Filter 'requestResponseLoggingFilter' configured for use
+2025-11-03 04:56:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-11-03 04:56:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8085 (http) with context path ''
+2025-11-03 04:56:24 [main] INFO  c.e.c.SpringConverterApplication - Started SpringConverterApplication in 2.253 seconds (process running for 2.619)
+2025-11-03 04:56:26 [http-nio-8085-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 04:56:26 [http-nio-8085-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 04:56:26 [http-nio-8085-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-03 04:56:26 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:56:26 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 47 ms | Timestamp: 2025-11-02T23:26:26.834415200Z
+2025-11-03 04:56:27 [http-nio-8085-exec-9] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:56:27 [http-nio-8085-exec-9] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 6 ms | Timestamp: 2025-11-02T23:26:27.880616800Z
+2025-11-03 04:56:30 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui.html
+2025-11-03 04:56:30 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui.html - Status: 302 | Time: 24 ms | Timestamp: 2025-11-02T23:26:30.453216500Z
+2025-11-03 04:56:30 [http-nio-8085-exec-8] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/index.html
+2025-11-03 04:56:30 [http-nio-8085-exec-8] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/index.html - Status: 200 | Time: 11 ms | Timestamp: 2025-11-02T23:26:30.466800500Z
+2025-11-03 04:56:30 [http-nio-8085-exec-7] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/swagger-ui.css
+2025-11-03 04:56:30 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/swagger-ui-standalone-preset.js
+2025-11-03 04:56:30 [http-nio-8085-exec-6] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/index.css
+2025-11-03 04:56:30 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/swagger-ui-bundle.js
+2025-11-03 04:56:30 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/swagger-initializer.js
+2025-11-03 04:56:30 [http-nio-8085-exec-6] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/index.css - Status: 200 | Time: 7 ms | Timestamp: 2025-11-02T23:26:30.506742500Z
+2025-11-03 04:56:30 [http-nio-8085-exec-7] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/swagger-ui.css - Status: 200 | Time: 15 ms | Timestamp: 2025-11-02T23:26:30.510250700Z
+2025-11-03 04:56:30 [http-nio-8085-exec-3] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/swagger-ui-standalone-preset.js - Status: 200 | Time: 11 ms | Timestamp: 2025-11-02T23:26:30.514759400Z
+2025-11-03 04:56:30 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/swagger-initializer.js - Status: 200 | Time: 15 ms | Timestamp: 2025-11-02T23:26:30.518607900Z
+2025-11-03 04:56:30 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/swagger-ui-bundle.js - Status: 200 | Time: 41 ms | Timestamp: 2025-11-02T23:26:30.540411Z
+2025-11-03 04:56:30 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/favicon-32x32.png
+2025-11-03 04:56:30 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs/swagger-config
+2025-11-03 04:56:30 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /swagger-ui/favicon-32x32.png - Status: 200 | Time: 6 ms | Timestamp: 2025-11-02T23:26:30.670608Z
+2025-11-03 04:56:30 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs/swagger-config - Status: 200 | Time: 9 ms | Timestamp: 2025-11-02T23:26:30.676103900Z
+2025-11-03 04:56:30 [http-nio-8085-exec-9] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs
+2025-11-03 04:56:30 [http-nio-8085-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 193 ms
+2025-11-03 04:56:30 [http-nio-8085-exec-9] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs - Status: 200 | Time: 256 ms | Timestamp: 2025-11-02T23:26:30.942986700Z
+2025-11-03 04:57:38 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/base64/encode-file
+2025-11-03 04:57:38 [http-nio-8085-exec-2] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/base64/encode-file - Status: 200 | Time: 348 ms | Timestamp: 2025-11-02T23:27:38.574182700Z
+2025-11-03 04:58:33 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/base64/decode-file
+2025-11-03 04:58:33 [http-nio-8085-exec-5] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/base64/decode-file - Status: 400 | Time: 32 ms | Timestamp: 2025-11-02T23:28:33.629517200Z
+2025-11-03 04:59:10 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/base64/decode-file
+2025-11-03 04:59:10 [http-nio-8085-exec-4] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [POST] /api/v1/base64/decode-file - Status: 200 | Time: 14 ms | Timestamp: 2025-11-02T23:29:10.764181600Z
+2025-11-03 04:59:48 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 04:59:48 [http-nio-8085-exec-1] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 3 ms | Timestamp: 2025-11-02T23:29:48.473352900Z
+2025-11-03 04:59:57 [http-nio-8085-exec-9] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs
+2025-11-03 04:59:57 [http-nio-8085-exec-9] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /v3/api-docs - Status: 200 | Time: 15 ms | Timestamp: 2025-11-02T23:29:57.489235800Z
+2025-11-03 05:00:10 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health
+2025-11-03 05:00:10 [http-nio-8085-exec-10] INFO  c.e.c.c.RequestResponseLoggingFilter - ?? [GET] /api/v1/health - Status: 200 | Time: 2 ms | Timestamp: 2025-11-02T23:30:10.832853Z
